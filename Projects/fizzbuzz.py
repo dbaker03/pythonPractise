@@ -17,5 +17,5 @@ while play != 'q':
             print(x)
         sleep(0.1)
 
-    play = input("Press enter to continue, q to quit: ")
+    play = input("\nPress enter to continue, q to quit: ")
     print("\n" * 100)
