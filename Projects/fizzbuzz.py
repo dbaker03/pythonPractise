@@ -1,6 +1,7 @@
 from time import sleep
 
-while True:
+play = ""
+while play != 'q':
     last = ''
     while not last.isdigit():
         last = input("Enter maximum: ")
@@ -16,5 +17,5 @@ while True:
             print(x)
         sleep(0.1)
 
-    input("Press enter to continue...")
+    play = input("Press enter to continue, q to quit: ")
     print("\n" * 100)
