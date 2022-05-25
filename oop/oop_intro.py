@@ -60,6 +60,10 @@ class Car:
     def brake(self, amount):
         self._speed = max(self._speed - amount, 0)
 
+    def crash(self):
+        self._speed = 0
+        self.top_speed = 0
+
     # getter
     def get_speed(self):
         return self._speed
@@ -74,10 +78,28 @@ print(tonya.get_speed())
 tonya.brake(100)
 print(tonya.get_speed())
 
+the_polo = Car('VW', 'Polo', 120, 'Red')
+
+
 # abstraction - take away detail, view from a higher level and make things easier
 #   eg user doesn't need to worry about logic of maximum speed
 #   we don't worry how .append() works we just know how to use it
 #   same with toaster we don't know how it works we just use it
+
 # encapsulation - hide away things
 #   we hid away the speed because we protect it
 #   In a toaster the user can choose exact current they use the knob to adjust heat
+
+# inheritance - classes should be able to inherit each other
+#   If we then want a 4 slice toaster we can inherit lots of compondents and designs from 2 slice
+
+# polymorphism - classes should be able to contain each other and be in the same list where they have common parent
+#   we can change methods and attributes from parent class - think override in C#, also multiple methods with different arguments (only C# - overload)
+
+# Single responsibility each class does one thing
+# Open closed - open for extension, closed for modification
+# Liskov substitution - any instance of a parent class you should be able to sub in a subclass
+# Interface segregation
+# Dependency inversion
+
+#think of own analgy
