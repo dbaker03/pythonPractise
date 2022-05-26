@@ -33,3 +33,7 @@ square = Square(5)
 print(square)
 print(square.get_area())
 print(square.get_perimeter())
+
+
+print(isinstance(square, Square))
+print(issubclass(Square, Rectangle))
