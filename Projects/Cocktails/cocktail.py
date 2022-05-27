@@ -4,7 +4,7 @@ menu = dict(i.split(',') for i in items)
 menu_file.close()
 
 
-def grab_orders() -> dict:
+def grab_orders() -> list[dict]:
     orders = open("orders.txt")
     lines = orders.read().split("\n")
     orders.close()

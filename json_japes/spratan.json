@@ -1,0 +1,9 @@
+{
+  "Name" : "David",
+  "Stream" : "Data engineering",
+  "Number" : 37,
+  "Bool" : true,
+  "Languages" : {
+    "Python" : 8
+  }
+}
